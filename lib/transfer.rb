@@ -31,3 +31,4 @@ def reverse_transfer
     self.status = "pending"
   end
 end
+end

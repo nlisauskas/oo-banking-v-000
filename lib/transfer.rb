@@ -18,9 +18,11 @@ class Transfer
   end
 
   def execute_transaction
+    if sender.valid? == true then
     @receiver.balance += @amount
     @sender.balance -= @amount
     @status = "complete"
+  else end
   end
 
 end

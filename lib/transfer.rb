@@ -28,7 +28,7 @@ def reverse_transfer
   if status == "complete"
     receiver.balance -= amount
     sender.balance += amount
-    self.status = "pending"
+    self.status = "reversed"
   end
 end
 end
